@@ -133,7 +133,7 @@ export default function App() {
           </a>
 
           <a
-            href="https://pump.fun/board"
+            href="https://pump.fun/coin/4MPp8MWerw8X8XzoBu58ox26c7NCV4hiRmwvS2Ewpump"
             target="_blank"
             rel="noopener noreferrer"
             className="px-8 py-3 rounded-full bg-[#F97316] hover:bg-[#EA580C] text-white font-bold transition-all duration-300 hover:scale-105 shadow-[0_0_15px_rgba(249,115,22,0.5)]"
