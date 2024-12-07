@@ -49,12 +49,12 @@ export default function App() {
         </div>
       )}
       {/* COSM Logo */}
-      <div className="fixed top-8 left-8 z-40 flex flex-col items-start">
-        <h1 className="text-6xl font-black tracking-tight">
-          <span className="text-[#F97316] drop-shadow-[0_0_15px_rgba(249,115,22,0.6)] filter blur-[0.2px]">$</span>
-          <span className="bg-gradient-to-r from-[#F97316] to-[#FBBF24] text-transparent bg-clip-text drop-shadow-[0_0_15px_rgba(249,115,22,0.6)]">COSM</span>
+      <div className="fixed top-10 left-10 z-40 flex flex-col items-start">
+        <h1 className="text-8xl font-black tracking-tight">
+          <span className="text-[#F97316] drop-shadow-[0_0_20px_rgba(249,115,22,0.7)] filter blur-[0.3px]">$</span>
+          <span className="bg-gradient-to-r from-[#F97316] to-[#FBBF24] text-transparent bg-clip-text drop-shadow-[0_0_20px_rgba(249,115,22,0.7)]">COSM</span>
         </h1>
-        <p className="text-lg text-white/90 mt-1 tracking-wider font-medium ml-1 drop-shadow-[0_2px_4px_rgba(0,0,0,0.3)]">
+        <p className="text-2xl text-white/90 mt-2 tracking-wider font-medium ml-1 drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)]">
           Cosmic Odyssey Space Mission
         </p>
       </div>
@@ -143,7 +143,7 @@ export default function App() {
           </a>
 
           <a
-            href="https://pump.fun/"
+            href="https://pump.fun/coin/DyVaoK82Cj5i7k8H6dVYtvTRYJNveNoAwMemru3Fpump"
             target="_blank"
             rel="noopener noreferrer"
             className="px-8 py-3 rounded-full bg-[#F97316] hover:bg-[#EA580C] text-white font-bold transition-all duration-300 hover:scale-105 shadow-[0_0_15px_rgba(249,115,22,0.5)]"
