@@ -42,12 +42,22 @@ export default function App() {
       {loading && (
         <div className="fixed inset-0 bg-[#1a1a2e] z-50 flex flex-col items-center justify-center">
           <div className="w-16 h-16 border-4 border-t-purple-500 border-r-blue-500 border-b-green-500 border-l-orange-500 rounded-full animate-spin"></div>
-          <h2 className="text-white text-2xl mt-8 font-bold">Loading Space...</h2>
+          <h2 className="text-white text-2xl mt-8 font-bold">Loading COSM Game ...</h2>
           <div className="w-64 h-2 bg-gray-700 rounded-full mt-4 overflow-hidden">
             <div className="h-full bg-gradient-to-r from-purple-500 via-blue-500 to-green-500 rounded-full animate-[loading_2s_ease-in-out]"></div>
           </div>
         </div>
       )}
+      {/* COSM Logo */}
+      <div className="fixed top-8 left-8 z-40 flex flex-col items-start">
+        <h1 className="text-6xl font-black tracking-tight">
+          <span className="text-[#F97316] drop-shadow-[0_0_15px_rgba(249,115,22,0.6)] filter blur-[0.2px]">$</span>
+          <span className="bg-gradient-to-r from-[#F97316] to-[#FBBF24] text-transparent bg-clip-text drop-shadow-[0_0_15px_rgba(249,115,22,0.6)]">COSM</span>
+        </h1>
+        <p className="text-lg text-white/90 mt-1 tracking-wider font-medium ml-1 drop-shadow-[0_2px_4px_rgba(0,0,0,0.3)]">
+          Cosmic Odyssey Space Mission
+        </p>
+      </div>
 
       {/* About Modal */}
       {showAbout && (
