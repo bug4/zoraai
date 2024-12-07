@@ -54,7 +54,7 @@ export default function App() {
         <div className="fixed inset-0 bg-black/70 backdrop-blur-sm z-50 flex items-center justify-center p-4">
           <div className="bg-gray-900/90 max-w-2xl rounded-2xl p-8 border border-purple-500/30 shadow-[0_0_30px_rgba(0,0,0,0.5)]">
             <div className="flex justify-between items-start mb-6">
-              <h2 className="text-3xl font-bold text-purple-400">About LEAP</h2>
+              <h2 className="text-3xl font-bold text-purple-400">About COSM</h2>
               <button 
                 onClick={() => setShowAbout(false)}
                 className="text-gray-400 hover:text-white"
@@ -63,27 +63,27 @@ export default function App() {
               </button>
             </div>
             <div className="space-y-4 text-gray-200">
-              <p>Welcome to LEAP - The first-ever daily competitive platformer on Solana!</p>
+              <p>Welcome to Cosmic Odyssey Space Mission - Where astronauts embark on an epic browser-based adventure in the Solana universe!</p>
               <div className="space-y-2">
-                <h3 className="text-xl font-bold text-purple-400">Daily Challenges</h3>
-                <p>Every 24 hours, a new level appears in the LEAP universe. Your mission? Complete it faster than anyone else!</p>
+                <h3 className="text-xl font-bold text-purple-400">The Mission</h3>
+                <p>Navigate through mystical cosmic landscapes, collecting rare stellar artifacts and completing challenging space missions. Each jump brings you closer to becoming a legendary space explorer!</p>
               </div>
               <div className="space-y-2">
-                <h3 className="text-xl font-bold text-purple-400">Prize Pool</h3>
-                <p>Each day brings a fresh opportunity to win SOL. The fastest astronaut to complete the daily mission takes home the prize pool!</p>
+                <h3 className="text-xl font-bold text-purple-400">Stellar Rewards</h3>
+                <p>Complete missions to earn $COSM tokens and unique space artifacts. The more challenging the mission, the greater the rewards await in the cosmic vault!</p>
               </div>
               <div className="space-y-2">
-                <h3 className="text-xl font-bold text-purple-400">How It Works</h3>
+                <h3 className="text-xl font-bold text-purple-400">Cosmic Features</h3>
                 <ul className="list-disc pl-5 space-y-1">
-                  <li>New level unlocks every day at 00:00 UTC</li>
-                  <li>Complete the level as fast as you can</li>
-                  <li>Your best time is automatically recorded</li>
-                  <li>Daily winner receives the SOL prize</li>
-                  <li>Global leaderboard updates in real-time</li>
+                  <li>Browser-based space exploration game</li>
+                  <li>Zero-gravity platforming mechanics</li>
+                  <li>Collect rare cosmic artifacts</li>
+                  <li>Earn while exploring the cosmos</li>
+                  <li>Join an interstellar community</li>
                 </ul>
               </div>
               <div className="mt-6 p-4 bg-purple-500/20 rounded-xl">
-                <p className="text-center font-bold">Join the space race and prove you're the fastest astronaut in the galaxy!</p>
+                <p className="text-center font-bold">Your cosmic odyssey awaits! Jump into the stars and become part of the next generation of space explorers! 🚀✨</p>
               </div>
             </div>
           </div>
@@ -115,7 +115,7 @@ export default function App() {
       <nav className="fixed top-0 w-full z-40 flex justify-center items-center p-4">
         <div className="flex gap-6">
           <a
-            href="https://x.com/LeapSolana"
+            href="https://x.com/CosmSolana"
             target="_blank"
             rel="noopener noreferrer"
             className="px-6 py-3 rounded-full bg-[#8B5CF6] hover:bg-[#7C3AED] text-white font-bold transition-all duration-300 hover:scale-105 shadow-[0_0_15px_rgba(139,92,246,0.5)]"
@@ -124,7 +124,7 @@ export default function App() {
           </a>
 
           <a
-            href="https://t.me/leaponsol"
+            href="https://t.me/cosmsolana"
             target="_blank"
             rel="noopener noreferrer"
             className="px-6 py-3 rounded-full bg-[#3B82F6] hover:bg-[#2563EB] text-white font-bold transition-all duration-300 hover:scale-105 shadow-[0_0_15px_rgba(59,130,246,0.5)]"
@@ -133,7 +133,7 @@ export default function App() {
           </a>
 
           <a
-            href="https://pump.fun/coin/4MPp8MWerw8X8XzoBu58ox26c7NCV4hiRmwvS2Ewpump"
+            href="https://pump.fun/"
             target="_blank"
             rel="noopener noreferrer"
             className="px-8 py-3 rounded-full bg-[#F97316] hover:bg-[#EA580C] text-white font-bold transition-all duration-300 hover:scale-105 shadow-[0_0_15px_rgba(249,115,22,0.5)]"
