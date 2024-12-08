@@ -152,7 +152,7 @@ export default function App() {
       <nav className="fixed top-0 w-full z-40 flex justify-center items-center p-4">
         <div className="flex gap-4">
           <a
-            href="https://x.com/CosmSolana"
+            href="https://x.com/hopsgame"
             target="_blank"
             rel="noopener noreferrer"
             className="px-6 py-3 rounded-2xl bg-white/10 backdrop-blur-sm border border-white/20 text-white font-medium transition-all duration-300 hover:scale-105 hover:bg-white/20 shadow-lg"
@@ -161,7 +161,7 @@ export default function App() {
           </a>
 
           <a
-            href="https://t.me/cosmsolana"
+            href="https://t.me/hopsportal"
             target="_blank"
             rel="noopener noreferrer"
             className="px-6 py-3 rounded-2xl bg-white/10 backdrop-blur-sm border border-white/20 text-white font-medium transition-all duration-300 hover:scale-105 hover:bg-white/20 shadow-lg"
