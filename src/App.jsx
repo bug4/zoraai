@@ -48,15 +48,30 @@ export default function App() {
           </div>
         </div>
       )}
-      {/* COSM Logo */}
-      <div className="fixed top-10 left-10 z-40 flex flex-col items-start">
-        <h1 className="text-8xl font-black tracking-tight">
-          <span className="text-[#F97316] drop-shadow-[0_0_20px_rgba(249,115,22,0.7)] filter blur-[0.3px]">$</span>
-          <span className="bg-gradient-to-r from-[#F97316] to-[#FBBF24] text-transparent bg-clip-text drop-shadow-[0_0_20px_rgba(249,115,22,0.7)]">COSM</span>
+      {/* HOPS Logo */}
+      <div className="fixed top-10 left-10 z-40">
+        <h1 className="text-8xl font-black tracking-tight flex">
+          <span className="inline-block animate-bounce-slow relative">
+            {/* H Letter */}
+            <span className="absolute -inset-1 text-black blur-[2px] select-none">H</span>
+            <span className="relative text-[#8B89FF]">H</span>
+          </span>
+          {/* O Letter */}
+          <span className="inline-block animate-bounce-slow relative [animation-delay:0.1s]">
+            <span className="absolute -inset-1 text-black blur-[2px] select-none">O</span>
+            <span className="relative text-[#FF8A3D]">O</span>
+          </span>
+          {/* P Letter */}
+          <span className="inline-block animate-bounce-slow relative [animation-delay:0.2s]">
+            <span className="absolute -inset-1 text-black blur-[2px] select-none">P</span>
+            <span className="relative text-[#65d6ad]">P</span>
+          </span>
+          {/* S Letter */}
+          <span className="inline-block animate-bounce-slow relative [animation-delay:0.3s]">
+            <span className="absolute -inset-1 text-black blur-[2px] select-none">S</span>
+            <span className="relative text-[#FFD43B]">S</span>
+          </span>
         </h1>
-        <p className="text-2xl text-white/90 mt-2 tracking-wider font-medium ml-1 drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)]">
-          Cosmic Odyssey Space Mission
-        </p>
       </div>
 
       {/* About Modal */}
@@ -100,35 +115,47 @@ export default function App() {
         </div>
       )}
 
+      {/* Replace the existing Game Controls Display with this new version */}
       {/* Game Controls Display */}
-      <div className="fixed left-6 top-1/2 transform -translate-y-1/2 bg-gray-900/80 backdrop-blur-md p-6 rounded-2xl z-40 border border-purple-500/30 shadow-[0_0_30px_rgba(0,0,0,0.5)]">
-        <h3 className="text-xl font-bold mb-6 text-purple-400 text-center">Controls</h3>
-        
-        <div className="grid grid-cols-3 gap-2 mb-4">
-          <div></div>
-          <KeyButton className={activeKey === 'w' ? 'bg-purple-600' : ''}>W</KeyButton>
-          <div></div>
-          <KeyButton className={activeKey === 'a' ? 'bg-purple-600' : ''}>A</KeyButton>
-          <KeyButton className={activeKey === 's' ? 'bg-purple-600' : ''}>S</KeyButton>
-          <KeyButton className={activeKey === 'd' ? 'bg-purple-600' : ''}>D</KeyButton>
-        </div>
-
-        <div className="mt-4">
-          <div className={`w-full h-10 bg-gray-800 border-2 border-purple-500/50 rounded-lg flex items-center justify-center text-white font-bold shadow-[0_0_10px_rgba(139,92,246,0.3)] ${activeKey === ' ' ? 'bg-purple-600' : ''}`}>
-            SPACE
+      <div className="fixed bottom-8 left-1/2 transform -translate-x-1/2 z-40 flex flex-col items-center">
+        <div className="bg-white/5 backdrop-blur-md p-6 rounded-3xl border border-white/10 shadow-lg">
+          {/* WASD Keys */}
+          <div className="grid grid-cols-3 gap-2">
+            <div></div>
+            <div className={`w-12 h-12 flex items-center justify-center rounded-xl bg-white/10 border border-white/20 transition-all duration-200 ${activeKey === 'w' ? 'bg-white/30' : ''}`}>
+              <span className="text-white/80 font-medium text-lg">W</span>
+            </div>
+            <div></div>
+            
+            <div className={`w-12 h-12 flex items-center justify-center rounded-xl bg-white/10 border border-white/20 transition-all duration-200 ${activeKey === 'a' ? 'bg-white/30' : ''}`}>
+              <span className="text-white/80 font-medium text-lg">A</span>
+            </div>
+            <div className={`w-12 h-12 flex items-center justify-center rounded-xl bg-white/10 border border-white/20 transition-all duration-200 ${activeKey === 's' ? 'bg-white/30' : ''}`}>
+              <span className="text-white/80 font-medium text-lg">S</span>
+            </div>
+            <div className={`w-12 h-12 flex items-center justify-center rounded-xl bg-white/10 border border-white/20 transition-all duration-200 ${activeKey === 'd' ? 'bg-white/30' : ''}`}>
+              <span className="text-white/80 font-medium text-lg">D</span>
+            </div>
           </div>
-          <p className="text-purple-400 text-sm mt-2 text-center">JUMP</p>
+
+          {/* Spacebar */}
+          <div className="mt-3">
+            <div className={`h-12 w-48 flex items-center justify-center rounded-xl bg-white/10 border border-white/20 transition-all duration-200 ${activeKey === ' ' ? 'bg-white/30' : ''}`}>
+              <span className="text-white/80 font-medium text-sm">SPACE</span>
+            </div>
+            <p className="text-white/50 text-xs mt-2 text-center">jump</p>
+          </div>
         </div>
       </div>
 
-      {/* Navigation Bar */}
+      {/* Update the Navigation Bar section with these new styles */}
       <nav className="fixed top-0 w-full z-40 flex justify-center items-center p-4">
-        <div className="flex gap-6">
+        <div className="flex gap-4">
           <a
             href="https://x.com/CosmSolana"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-6 py-3 rounded-full bg-[#8B5CF6] hover:bg-[#7C3AED] text-white font-bold transition-all duration-300 hover:scale-105 shadow-[0_0_15px_rgba(139,92,246,0.5)]"
+            className="px-6 py-3 rounded-2xl bg-white/10 backdrop-blur-sm border border-white/20 text-white font-medium transition-all duration-300 hover:scale-105 hover:bg-white/20 shadow-lg"
           >
             Twitter
           </a>
@@ -137,23 +164,23 @@ export default function App() {
             href="https://t.me/cosmsolana"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-6 py-3 rounded-full bg-[#3B82F6] hover:bg-[#2563EB] text-white font-bold transition-all duration-300 hover:scale-105 shadow-[0_0_15px_rgba(59,130,246,0.5)]"
+            className="px-6 py-3 rounded-2xl bg-white/10 backdrop-blur-sm border border-white/20 text-white font-medium transition-all duration-300 hover:scale-105 hover:bg-white/20 shadow-lg"
           >
             Telegram
           </a>
 
           <a
-            href="https://pump.fun/coin/DyVaoK82Cj5i7k8H6dVYtvTRYJNveNoAwMemru3Fpump"
+            href="https://pump.fun/"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-8 py-3 rounded-full bg-[#F97316] hover:bg-[#EA580C] text-white font-bold transition-all duration-300 hover:scale-105 shadow-[0_0_15px_rgba(249,115,22,0.5)]"
+            className="px-8 py-3 rounded-2xl bg-[#65d6ad]/20 backdrop-blur-sm border border-[#65d6ad]/30 text-white font-medium transition-all duration-300 hover:scale-105 hover:bg-[#65d6ad]/30 shadow-lg"
           >
             Buy Now
           </a>
 
           <button
             onClick={() => setShowAbout(true)}
-            className="px-6 py-3 rounded-full bg-[#10B981] hover:bg-[#059669] text-white font-bold transition-all duration-300 hover:scale-105 shadow-[0_0_15px_rgba(16,185,129,0.5)]"
+            className="px-6 py-3 rounded-2xl bg-white/10 backdrop-blur-sm border border-white/20 text-white font-medium transition-all duration-300 hover:scale-105 hover:bg-white/20 shadow-lg"
           >
             About
           </button>
@@ -162,7 +189,7 @@ export default function App() {
 
       {/* Spline Scene */}
       <div style={{ width: '100vw', height: '100vh' }}>
-        <Spline scene="https://prod.spline.design/yAKmh5oup6rMMwLn/scene.splinecode" />
+        <Spline scene="https://prod.spline.design/UgeH0tX3o6QrrJME/scene.splinecode" />
       </div>
     </div>
   );
