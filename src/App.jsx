@@ -15,12 +15,17 @@ const SYSTEM_MESSAGE = {
 };
 
 export default function App() {
-  const [messages, setMessages] = useState([]);
   const [input, setInput] = useState('');
   const [isTyping, setIsTyping] = useState(false);
   const [showHowItWorks, setShowHowItWorks] = useState(false);
   const [showChangelog, setShowChangelog] = useState(false);
   const chatContainerRef = useRef(null);
+  const [messages, setMessages] = useState([
+    {
+      role: 'assistant',
+      content: 'Hello! I am Zora, an AI assistant specialized in Solana blockchain technology. Feel free to ask me anything about Solana, DeFi, or crypto concepts. I\'m here to help you understand and navigate the blockchain space better.'
+    }
+  ]);
 
   useEffect(() => {
     if (chatContainerRef.current) {
