@@ -2,7 +2,6 @@ import Spline from '@splinetool/react-spline';
 import { useState, useRef, useEffect } from 'react';
 import OpenAI from 'openai';
 
-// Initialize OpenAI client
 const openai = new OpenAI({
   apiKey: '',
   dangerouslyAllowBrowser: true
@@ -76,7 +75,7 @@ export default function App() {
       {/* Social Icons */}
       <div className="fixed left-8 top-1/2 -translate-y-1/2 flex flex-col gap-6">
         <a
-          href="https://x.com/hopsgame"
+          href="https://x.com/ZoraTerminal"
           target="_blank"
           rel="noopener noreferrer"
           className="w-10 h-10 bg-[#1a1f2e]/90 rounded-lg flex items-center justify-center text-[#8e9eff] hover:bg-[#2a2f3e] transition-all duration-300 hover:scale-110"
@@ -87,7 +86,7 @@ export default function App() {
         </a>
 
         <a
-          href="https://t.me/hopsportal"
+          href="https://t.me/"
           target="_blank"
           rel="noopener noreferrer"
           className="w-10 h-10 bg-[#1a1f2e]/90 rounded-lg flex items-center justify-center text-[#8e9eff] hover:bg-[#2a2f3e] transition-all duration-300 hover:scale-110"
@@ -110,7 +109,7 @@ export default function App() {
 
 
         <a
-          href="https://solscan.io/token/YOUR_CONTRACT_ADDRESS"
+          href="https://solscan.io/token/"
           target="_blank"
           rel="noopener noreferrer"
           className="w-10 h-10 bg-[#1a1f2e]/90 rounded-lg flex items-center justify-center text-[#8e9eff] hover:bg-[#2a2f3e] transition-all duration-300 hover:scale-110"
