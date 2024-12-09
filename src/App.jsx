@@ -3,7 +3,7 @@ import { useState, useRef, useEffect } from 'react';
 import OpenAI from 'openai';
 
 const openai = new OpenAI({
-  apiKey: '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',
+  apiKey: '',
   dangerouslyAllowBrowser: true
 });
 
@@ -109,7 +109,7 @@ export default function App() {
 
 
         <a
-          href="https://solscan.io/token/"
+          href="https://solscan.io/"
           target="_blank"
           rel="noopener noreferrer"
           className="w-10 h-10 bg-[#1a1f2e]/90 rounded-lg flex items-center justify-center text-[#8e9eff] hover:bg-[#2a2f3e] transition-all duration-300 hover:scale-110"
