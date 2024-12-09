@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@netlify/functions": "^2.8.2",
     "@solana/web3.js": "^1.95.8",
     "@splinetool/react-spline": "^4.0.0",
     "@splinetool/runtime": "^1.9.48",
