@@ -86,7 +86,7 @@ export default function App() {
             rel="noopener noreferrer"
             className="text-[#2563EB] hover:text-white transition-all duration-300 hover:translate-y-[-2px]"
           >
-            Markets
+            Chart
           </a>
 
           <button
@@ -109,7 +109,7 @@ export default function App() {
             rel="noopener noreferrer"
             className="px-8 py-3 bg-gradient-to-r from-[#2563EB] to-[#1D4ED8] rounded-lg text-white font-medium transition-all duration-300 hover:shadow-[0_0_20px_rgba(79,70,229,0.3)] hover:translate-y-[-2px] border border-[#2563EB]/20"
           >
-            Launch App
+            Buy $ATLAS
           </a>
         </div>
       </div>
@@ -122,24 +122,13 @@ export default function App() {
       {/* Social Icons */}
       <div className="fixed left-8 top-1/2 -translate-y-1/2 flex flex-col gap-6">
         <a
-          href="https://x.com/AtlasAI"
+          href="https://x.com/atlasai_exe"
           target="_blank"
           rel="noopener noreferrer"
           className="w-14 h-14 bg-[#020B2C]/90 rounded-lg flex items-center justify-center text-[#2563EB] hover:bg-[#051041] transition-all duration-300 hover:scale-110 border border-[#2563EB]/20"
         >
           <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
             <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-          </svg>
-        </a>
-
-        <a
-          href="https://t.me/AtlasAI"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="w-14 h-14 bg-[#020B2C]/90 rounded-lg flex items-center justify-center text-[#2563EB] hover:bg-[#051041] transition-all duration-300 hover:scale-110 border border-[#2563EB]/20"
-        >
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.14.18-.357.218-.548.218l.188-2.85 5.18-4.68c.223-.198-.054-.308-.346-.11l-6.4 4.03-2.76-.918c-.598-.183-.608-.577.126-.852l10.782-4.156c.505-.183.95.114.78.852z" />
           </svg>
         </a>
       </div>
