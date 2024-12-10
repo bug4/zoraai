@@ -81,7 +81,7 @@ export default function App() {
         {/* Right side - Navigation Items */}
         <div className="flex items-center gap-8 font-['Inter']">
           <a
-            href="https://pump.fun/"
+            href="https://pump.fun/coin/6Uf9qbo6F8AFgTtaabHFb688qAFeJdUzxaoP2MQTpump"
             target="_blank"
             rel="noopener noreferrer"
             className="text-[#2563EB] hover:text-white transition-all duration-300 hover:translate-y-[-2px]"
@@ -104,7 +104,7 @@ export default function App() {
           </button>
 
           <a
-            href="https://pump.fun/"
+            href="https://pump.fun/coin/6Uf9qbo6F8AFgTtaabHFb688qAFeJdUzxaoP2MQTpump"
             target="_blank"
             rel="noopener noreferrer"
             className="px-8 py-3 bg-gradient-to-r from-[#2563EB] to-[#1D4ED8] rounded-lg text-white font-medium transition-all duration-300 hover:shadow-[0_0_20px_rgba(79,70,229,0.3)] hover:translate-y-[-2px] border border-[#2563EB]/20"
